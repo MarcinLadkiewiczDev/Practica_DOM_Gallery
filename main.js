@@ -144,3 +144,40 @@ const pirates = [
         image: './assets/blackbeardpirates/shiryu.jpg'
     }
 ];
+const pirateCrews = ["Mugiwara", "Red Head Pirates", "Cross Guild", "Black Beard Pirates"];
+//RECUPERO EL MAIN
+
+const main = document.querySelector("main");
+
+//VOY A CREAR ELEMENTOS DE HTML POR JS PARA PRACTICAR
+
+const section = document.createElement("section");
+const navBar = document.createElement("nav");
+
+//AÑADIMOS AL HTML 
+
+for (const crew of pirateCrews) {
+    const button = document.createElement("button");
+    button.innerText = crew;
+    navBar.appendChild(button);
+}
+
+main.appendChild(navBar);
+
+for (const pirate of pirates) {
+    const article = document.createElement("article");
+    article.classList = "pirate";
+    article.innerHTML = `
+    <img src="${pirate.image}" alt="imagen del pirata">
+    <h2>${pirate.name}</h2>
+    <p>${pirate.bounty}</p>
+    <h3>${pirate.crew}</h3>
+    `
+    section.appendChild(article);
+}
+
+main.appendChild(section);
+
+
+
+   
