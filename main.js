@@ -144,40 +144,67 @@ const pirates = [
         image: './assets/blackbeardpirates/shiryu.jpg'
     }
 ];
-const pirateCrews = ["Mugiwara", "Red Head Pirates", "Cross Guild", "Black Beard Pirates"];
-//RECUPERO EL MAIN
 
-const main = document.querySelector("main");
 
-//VOY A CREAR ELEMENTOS DE HTML POR JS PARA PRACTICAR
+/* recuperamos los botones para realizar un filtro por [crew] */
 
-const section = document.createElement("section");
-const navBar = document.createElement("nav");
+const showAllPiratesBtn = document.getElementById("showAllPirates");
+const mugiwarasBtn = document.getElementById("mugiwaras");
+const redHeadPiratesBtn = document.getElementById("redHeadPirates");
+const blackBeardPiratesBtn = document.getElementById("blackBeardPirates");
+const crossGuildBtn = document.getElementById("crossGuild");
 
-//AÑADIMOS AL HTML 
+/* creo la funcion que pintará todos los piratas  */
 
-for (const crew of pirateCrews) {
-    const button = document.createElement("button");
-    button.innerText = crew;
-    navBar.appendChild(button);
+const showAll = (pirates = showCrew) => {
+    //recuperamos el section donde pintaremos los piratas
+    
+    const sectionPirates = document.getElementById("piratesShow");
+    sectionPirates.innerHTML = "";
+    //recorremos el array con forEach para pintar cada pirata.
+    pirates.forEach(pirate =>{
+        const article = document.createElement("article");
+        article.classList = "pirate";
+        article.innerHTML = `
+        <img src="${pirate.image}" alt="imagen del pirata">
+        <h3>${pirate.name}</h3>
+        <p>${pirate.bounty}</p>
+        <h4>${pirate.crew}</h4>
+        `;
+        sectionPirates.appendChild(article);
+    });
 }
 
-main.appendChild(navBar);
+/* creo la funcion para filtrar a los piratas */
 
-for (const pirate of pirates) {
-    const article = document.createElement("article");
-    article.classList = "pirate";
-    article.innerHTML = `
-    <img src="${pirate.image}" alt="imagen del pirata">
-    <h2>${pirate.name}</h2>
-    <p>${pirate.bounty}</p>
-    <h3>${pirate.crew}</h3>
-    `
-    section.appendChild(article);
+const filteredPirates = (crew) =>{
+    const showCrew = pirates.filter(pirate => pirate.crew === crew)
+    showAll(showCrew);
 }
 
-main.appendChild(section);
+mugiwarasBtn.addEventListener("click", () =>{
+    filteredPirates('Mugiwaras');
+});
 
+redHeadPiratesBtn.addEventListener("click", () =>{
+    filteredPirates('Red Head Pirates');
+});
+
+blackBeardPiratesBtn.addEventListener("click", () =>{
+    filteredPirates('Black Beard Pirates');
+});
+
+crossGuildBtn.addEventListener("click", () =>{
+    filteredPirates('Cross Guild');
+});
+showAllPiratesBtn.addEventListener("click", () =>{
+    showAll(pirates);
+});
+
+
+
+
+showAll(pirates);
 
 
    
