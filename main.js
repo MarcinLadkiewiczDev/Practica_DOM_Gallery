@@ -75,7 +75,7 @@ const pirates = [
         name: 'Yassop',
         bounty: 400000000,
         crew: 'Red Head Pirates',
-        image: './assets/redheadpirates/yassop.jpg'
+        image: './assets/redheadpirates/Yassop.jpg'
     },
     {
         name: 'Lucky Roux',
