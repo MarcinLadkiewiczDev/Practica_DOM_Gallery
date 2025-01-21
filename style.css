@@ -37,6 +37,7 @@ h1 {
 main{
     background-color: var(--main-background);
     width: 100%;
+    padding: var(--general-gap);
 }
 nav { 
     width: 100%;
@@ -94,7 +95,8 @@ section {
 }
 
 .pirate > img {
-    width: 100%
+    width: 100%;
+    height: 60%;
 }
 
 
