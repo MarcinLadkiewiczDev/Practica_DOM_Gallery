@@ -156,7 +156,7 @@ const crossGuildBtn = document.getElementById("crossGuild");
 
 /* creo la funcion que pintará todos los piratas  */
 
-const showAll = (pirates = showCrew) => {
+const showAll = (pirates) => {
     //recuperamos el section donde pintaremos los piratas
     
     const sectionPirates = document.getElementById("piratesShow");
