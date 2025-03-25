@@ -1,145 +1,145 @@
 const pirates = [
     {
         name: 'Monkey D. Luffy',
-        bounty: 3000000000, // 3 mil millones
+        bounty: "3.000.000.000", // 3 mil millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/luffy.jpg'
     },
     {
         name: 'Roronoa Zoro',
-        bounty: 1111000000, // 1.111 mil millones
+        bounty: "1.111.000.000", // 1.111 mil millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/zoro.jpg'
     },
     {
         name: 'Nami',
-        bounty: 366000000, // 366 millones
+        bounty: "366.000.000", // 366 millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/nami.jpg'
     },
     {
         name: 'Usopp',
-        bounty: 500000000, // 500 millones
+        bounty: "500.000.000", // 500 millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/god_usopp.webp'
     },
     {
         name: 'Sanji',
-        bounty: 1032000000, // 1.032 mil millones
+        bounty: "1.032.000.000", // 1.032 mil millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/vinsmoke_sanji.jpg'
     },
     {
         name: 'Tony Tony Chopper',
-        bounty: 1000, // 1 mil (¡Sí, es real!)
+        bounty: "1.000", // 1 mil (¡Sí, es real!)
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/chopper.png'
     },
     {
         name: 'Nico Robin',
-        bounty: 930000000, // 930 millones
+        bounty: "930.000.000", // 930 millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/nico_robin.jpg'
     },
     {
         name: 'Franky',
-        bounty: 394000000, // 394 millones
+        bounty: "394.000.000", // 394 millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/franky.png'
     },
     {
         name: 'Brook',
-        bounty: 383000000, // 383 millones
+        bounty: "383.000.000", // 383 millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/brook.jpg'
     },
     {
         name: 'Jinbe',
-        bounty: 1100000000, // 1.1 mil millones
+        bounty: "1.100.000.000", // 1.1 mil millones
         crew: 'Mugiwaras',
         image: './assets/mugiwaras/jinbe.jpg'
     },
     {
         name: 'Shanks',
-        bounty: 4048900000,
+        bounty: "4.048.900.000",
         crew: 'Red Head Pirates',
         image: './assets/redheadpirates/shanks.png'
     },
     {
         name: 'Ben Beckmann',
-        bounty: 3559000000,
+        bounty: "3.559.000.000",
         crew: 'Red Head Pirates',
         image: './assets/redheadpirates/ben_beckman.jpg'
     },
     {
         name: 'Yassop',
-        bounty: 400000000,
+        bounty: "400.000.000",
         crew: 'Red Head Pirates',
         image: './assets/redheadpirates/Yassop.jpg'
     },
     {
         name: 'Lucky Roux',
-        bounty: 933000000,
+        bounty: "933.000.000",
         crew: 'Red Head Pirates',
         image: './assets/redheadpirates/lucky_roux.jpg'
     },
     {
         name: 'Bonk Punch',
-        bounty: 733000000,
+        bounty: "733.000.000",
         crew: 'Red Head Pirates',
         image: './assets/redheadpirates/bonk_punch.jpg'
     },
     {
         name: 'Lime Juice',
-        bounty: 865000000,
+        bounty: "865.000.000",
         crew: 'Red Head Pirates',
         image: './assets/redheadpirates/Lime_juice.jpg'
     },
     {
         name: 'Buggy',
-        bounty: 3189000000,
+        bounty: "3.189.000.000",
         crew: 'Cross Guild',
         image: './assets/crossguild/buggy.png'
     },
     {
         name: 'Dracule Mihawk',
-        bounty: 3500000000,
+        bounty: "3.500.000.000",
         crew: 'Cross Guild',
         image: './assets/crossguild/dracule_mihawk.jpg'
     },
     {
         name: 'Sir. Crocodile',
-        bounty: 1965000000,
+        bounty: "1.965.000.000",
         crew: 'Cross Guild',
         image: './assets/crossguild/sir_crocodile.png'
     },
     {
         name: 'Marshall D Teach',
-        bounty: 3996000000,
+        bounty: "3.996.000.000",
         crew: 'Black Beard Pirates',
         image: './assets/blackbeardpirates/black_beard.png'
     },
     {
         name: 'Jesus Burgess',
-        bounty: 850000000,
+        bounty: "850.000.000",
         crew: 'Black Beard Pirates',
         image: './assets/blackbeardpirates/jesus_burguess.jpg'
     },
     {
         name: 'Kuzan',
-        bounty: 1110000000,
+        bounty: "1.110.000.000",
         crew: 'Black Beard Pirates',
         image: './assets/blackbeardpirates/Kuzan.jpg'
     },
     {
         name: 'Laffitte',
-        bounty: 450000000,
+        bounty: "450.000.000",
         crew: 'Black Beard Pirates',
         image: './assets/blackbeardpirates/laffite.jpg'
     },
     {
         name: 'Shiryu',
-        bounty: 900000000,
+        bounty: "900.000.000",
         crew: 'Black Beard Pirates',
         image: './assets/blackbeardpirates/shiryu.jpg'
     }
